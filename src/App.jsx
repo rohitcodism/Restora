@@ -2,6 +2,7 @@ import { Home } from "./Pages/Home"
 import { Order } from "./Pages/Order"
 import { Cart } from "./Pages/Cart"
 import { Showcase } from "./Pages/Showcase"
+import { Menu } from "./Pages/Menu"
 import { Route, Routes } from "react-router-dom"
 
 function App() {
@@ -10,7 +11,8 @@ function App() {
     <>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/Order" element={<Order />} />
+        <Route path="/menu" element={<Menu />} />
+        <Route path="/order" element={<Order />} />
         <Route path="/cart" element={<Cart />} />
       </Routes>
     </>
