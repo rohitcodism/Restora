@@ -1,9 +1,11 @@
-import { Box } from "@mui/material";
+import { Container } from "@mui/material";
+import { Navbar } from "../Components/Navbar";
 
 export const Menu = () => {
     return(
-        <Box>
-            Menu
-        </Box>
+        <Container>
+            <Navbar />
+            <h3>menu</h3>
+        </Container>
     );
 }
