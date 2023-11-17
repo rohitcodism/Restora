@@ -3,7 +3,7 @@
   export const MenuList =  [
     {
       "id" : 1,
-      "name": "Biryani",
+      "name": "Biriyani",
       "description": "A rice dish cooked with spices, meat, vegetables, and yogurt.",
       "image" : Biriyani
     },
