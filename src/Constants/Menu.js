@@ -5,138 +5,161 @@
       "id" : 1,
       "name": "Biriyani",
       "description": "A rice dish cooked with spices, meat, vegetables, and yogurt.",
-      "image" : Biriyani
+      "image" : Biriyani,
+      "category" : "Non-veg",
     },
     {
       "id" : 2,
       "name": "Masala dosa",
       "description": "A thin crepe made from fermented rice and lentil batter.",
-      "image" : MasalaDosa
+      "image" : MasalaDosa,
+      "category" : "Veg",
     },
     {
       "id" : 3,
       "name": "Butter chicken",
       "description": "A dish of chicken cooked in a creamy tomato sauce flavored with butter and spices.",
-      "image" : ButterChicken
+      "image" : ButterChicken,
+      "category" : "Non-veg",
     },
     {
       "id" : 4,
       "name": "Samosas",
       "description": "Deep-fried pastries filled with a savory potato and pea mixture.",
-      "image" : Samosas
+      "image" : Samosas,
+      "category" : "Veg",
     },
     {
       "id" : 5,
       "name": "Naan",
       "description": "A leavened flatbread cooked in a tandoor oven.",
-      "image" : Naan
+      "image" : Naan,
+      "category" : "Veg",
     },
     {
       "id" : 6,
       "name": "Tandoori chicken",
       "description": "Chicken marinated in yogurt and spices and cooked in a tandoor oven.",
-      "image" : TandooriChicken
+      "image" : TandooriChicken,
+      "category" : "Non-veg",
     },
     {
       "id" : 7,
       "name": "Palak paneer",
       "description": "A dish of paneer cheese cooked in a spinach sauce.",
-      "image" : PalakPaneer
+      "image" : PalakPaneer,
+      "category" : "Veg",
     },
     {
       "id" : 8,
       "name": "Chana masala",
       "description": "A dish of chickpeas cooked in a tomato and onion sauce.",
-      "image" : ChanaMasala
+      "image" : ChanaMasala,
+      "category" : "Veg",
     },
     {
       "id" : 9,
       "name": "Dal makhani",
       "description": "A lentil dish cooked in a creamy tomato sauce.",
-      "image" : DalMakhni
+      "image" : DalMakhni,
+      "category" : "Veg",
     },
     {
       "id" : 10,
       "name": "Idli",
       "description": "Steamed cakes made from fermented rice and lentil batter.",
-      "image" : Idli
+      "image" : Idli,
+      "category" : "Veg",
     },
     {
       "id" : 11,
       "name": "Vada",
       "description": "Deep-fried savory donuts made from lentil batter.",
-      "image" : Vada
+      "image" : Vada,
+      "category" : "Veg",
     },
     {
       "id" : 12,
       "name": "Dhokla",
       "description": "Steamed cakes made from fermented chickpea batter.",
-      "image" : Dhokla
+      "image" : Dhokla,
+      "category" : "Veg",
     },
     {
       "id" : 13,
       "name": "Uttapam",
       "description": "A thick pancake made from fermented rice and lentil batter.",
-      "image" : Uttapam
+      "image" : Uttapam,
+      "category" : "Veg",
     },
     {
       "id" : 14,
       "name": "Chaat",
       "description": "A savory snack made with a variety of ingredients, such as potatoes, chickpeas.",
-      "image" : Chaat
+      "image" : Chaat,
+      "category" : "Veg",
     },
     {
       "id" : 15,
       "name": "Rasmalai",
       "description": "Balls of paneer cheese soaked in a sweet milk syrup.",
-      "image" : Rasmalai
+      "image" : Rasmalai,
+      "category" : "Veg",
     },
     {
       "id" : 16,
       "name": "Gulab jamun",
       "description": "Milk solids deep-fried in syrup and then soaked in sugar syrup.",
-      "image" : GulabJamun
+      "image" : GulabJamun,
+      "category" : "Veg",
     },
     {
       "id" : 17,
       "name": "Jalebi",
       "description": "Deep-fried batter spirals soaked in sugar syrup.",
-      "image" : Jalebi
+      "image" : Jalebi,
+      "category" : "Veg",
     },
     {
       "id" : 18,
       "name": "Ladoo",
       "description": "Sweet balls made with various ingredients, such as gram flour, sugar, and nuts.",
-      "image" : Laddoo
+      "image" : Laddoo,
+      "category" : "Veg",
     },
     {
       "id" : 19,
       "name": "Barfi",
       "description": "A dense, fudge-like sweet made with milk, sugar, and nuts.",
-      "image" : Barfi
+      "image" : Barfi,
+      "category" : "Veg",
     },
     {
       "id" : 20,
       "name": "Gajar ka halwa",
       "description":" A carrot pudding dessert made with carrots, milk, sugar, and nuts.",
-      "image" : GajarkaHalwa
+      "image" : GajarkaHalwa,
+      "category" : "Veg",
     },
     {
       "id" : 21,
       "name": "Kheer",
       "description": "A rice pudding dessert made with milk, sugar, and rice.",
-      "image" : Kheer
+      "image" : Kheer,
+      "category" : "Veg",
     },
     {
       "id" : 22,
       "name": "Payasam",
       "description":" A sweet milk porridge made with milk, sugar, and rice or vermicelli.",
-      "image" : Payas
+      "image" : Payas,
+      "category" : "Veg",
     },
     {
       "id" : 23,
       "name": "Falooda",
       "description": "A cold dessert made with milk, sugar, ice cream, vermicelli, and nuts.",
-      "image" : Falooda
+      "image" : Falooda,
+      "category" : "Veg",
     },
   ]
