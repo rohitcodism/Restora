@@ -139,16 +139,4 @@
       "description": "A cold dessert made with milk, sugar, ice cream, vermicelli, and nuts.",
       "image" : Biriyani
     },
-    {
-      "id" : 24,
-      "name": "Thali",
-      "description":" A platter of various Indian dishes, such as rice, dal, curry, vegetables, and roti.",
-      "image" : Biriyani
-    },
-    {
-      "id" : 25,
-      "name": "Dosa",
-      "description": "A thin crepe made from fermented rice and lentil batter, often filled with a potato and onion mixture or other savory fillings.",
-      "image" : Biriyani
-    }
   ]
