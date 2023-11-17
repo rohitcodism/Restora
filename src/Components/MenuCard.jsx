@@ -11,7 +11,7 @@ export const MenuCard = ({ foodTitle, foodDescription, foodImage }) => {
                 <CardMedia component="img" height="60%" image={foodImage} alt={foodTitle} />
                 <CardContent sx={{ height: "40%" }}>
                     <Typography variant="h6" sx={{ fontFamily: "Poppins,sans-serif", color: "#01D28E", fontWeight: "semibold" }}>{foodTitle}</Typography>
-                    <Typography variant="caption" sx={{ fontFamily: "Poppins, sans-serif", fontSize: "0.7rem" }}>{foodDescription}</Typography>
+                    <Typography variant="body2" sx={{ fontFamily: "Poppins, sans-serif", fontSize: "0.65rem" }}>{foodDescription}</Typography>
                 </CardContent>
             </Card>
     );

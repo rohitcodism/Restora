@@ -1,4 +1,25 @@
 import Biriyani from "./Food-Images/biriyani.jpg";
 import GajarkaHalwa from "./Food-Images/gajar-ka-halwa.jpeg";
+import Jalebi from "./Food-Images/jalebi.jpg";
+import MasalaDosa from "./Food-Images/masala-dosa.jpg";
+import ButterChicken from "./Food-Images/butter-chicken.jpg";
+import Samosas from "./Food-Images/samosa.jpg";
+import Naan from "./Food-Images/naan.jpg";
+import TandooriChicken from "./Food-Images/tandoori.jpg";
+import PalakPaneer from "./Food-Images/palaak-paneer.jpg";
+import ChanaMasala from "./Food-Images/chana-masalaa.jpg";
+import DalMakhni from "./Food-Images/dal-makhni.jpg";
+import Idli from "./Food-Images/idli.jpg";
+import Vada from "./Food-Images/vada.jpg";
+import Dhokla from "./Food-Images/dhokla.jpg";
+import Uttapam from "./Food-Images/uttapam.jpg";
+import Chaat from "./Food-Images/chaat.jpg";
+import Rasmalai from "./Food-Images/rasmalai.jpg";
+import GulabJamun from "./Food-Images/gulab-jamun.jpg";
+import Laddoo from "./Food-Images/laddoo.jpg";
+import Barfi from "./Food-Images/barfi.jpg";
+import Kheer from "./Food-Images/kheer.jpeg";
+import Payas from "./Food-Images/payasam.jpg";
+import Falooda from "./Food-Images/falooda.jpg";
 
-export {Biriyani, GajarkaHalwa};
+export {Biriyani, GajarkaHalwa, Jalebi, MasalaDosa, ButterChicken, Samosas, Naan, TandooriChicken, PalakPaneer, ChanaMasala, DalMakhni, Idli, Vada, Dhokla, Uttapam, Chaat, Rasmalai, GulabJamun, Laddoo, Barfi, Kheer, Payas, Falooda};
