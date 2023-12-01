@@ -7,6 +7,8 @@ import { Route, Routes } from "react-router-dom"
 
 function App() {
 
+
+
   return (
     <>
       <Routes>
@@ -14,6 +16,7 @@ function App() {
         <Route path="/menu" element={<Menu />} />
         <Route path="/order" element={<Order />} />
         <Route path="/cart" element={<Cart />} />
+        <Route path="/showcase/:id" element={<Showcase />} />
       </Routes>
     </>
   )

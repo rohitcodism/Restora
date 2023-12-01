@@ -4,22 +4,8 @@ import { MenuList } from "../Constants/Menu";
 import { MenuCard } from "../Components/MenuCard";
 import { Grid } from "@mui/material";
 import { useState } from "react";
-import { styled } from "@mui/system";
 
 export const Menu = () => {
-
-    const StyledTextField = styled(TextField)(() => ({
-        "& .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline": {
-            borderWidth: "3px",
-            borderColor: "#01D28E",
-        },
-        "& .MuiInputLabel-root.Mui-focused": {
-            color: "#01D28E",
-        },
-        "& .MuiOutlinedInput-root": {
-            borderRadius: "20px",
-        },
-    }));
 
     const [searchTerm, setSearchTerm] = useState("");
     const [category, setCategory] = useState("All");
@@ -60,6 +46,7 @@ export const Menu = () => {
                             borderRadius: "20px",
                         },
                     }}
+                    
                     onChange={(event) => {
                         setSearchTerm(event.target.value);
                     }}
@@ -74,16 +61,16 @@ export const Menu = () => {
                 <Grid container spacing={2.5} sx={{ marginTop: "3rem", marginBottom: "3rem" }}>
                     {searchTerm ? filteredMenuList.map((food, index) => (
                         <Grid item xs={12} sm={6} md={4} lg={4} key={index}>
-                            <MenuCard foodTitle={food.name} foodDescription={food.description} foodImage={food.image} />
+                            <MenuCard foodTitle={food.name} foodDescription={food.description} foodImage={food.image} foodId={food.id} foodPrice={food.price} />
                         </Grid>
                     )) : category ? categoryFilteredMenuList.map((food, index) => (
                         <Grid item xs={12} sm={6} md={4} lg={4} key={index}>
-                            <MenuCard foodTitle={food.name} foodDescription={food.description} foodImage={food.image} />
+                            <MenuCard foodTitle={food.name} foodDescription={food.description} foodImage={food.image} foodId={food.id} foodPrice={food.price}/>
                         </Grid>
 
                     )) : MenuList.map((food, index) => (
                         <Grid item xs={12} sm={6} md={4} lg={4} key={index}>
-                            <MenuCard foodTitle={food.name} foodDescription={food.description} foodImage={food.image} />
+                            <MenuCard foodTitle={food.name} foodDescription={food.description} foodImage={food.image} foodId={food.id} foodPrice={food.price} />
                         </Grid>
                     ))}
                 </Grid>
