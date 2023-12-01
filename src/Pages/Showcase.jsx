@@ -2,14 +2,37 @@ import { Autocomplete, Button, Container, TextField, Typography } from "@mui/mat
 import { Navbar } from "../Components/Navbar";
 import { MenuList } from "../Constants/Menu";
 import { useLocation } from "react-router-dom";
-import { useState, useContext } from "react";
-import { CartContext } from "../Context/CartContext";
+import { useState } from "react";
+import toast,{ Toaster } from "react-hot-toast";
 
 export const Showcase = () => {
 
-    
+    const[cart, setCart] = useState(localStorage.getItem("cart")?JSON.parse(localStorage.getItem("cart")):[]);
+    console.log(cart);
 
     const [quantity, setQuantity] = useState(1);
+
+    const handleAddToCart = (e) => {
+        e.preventDefault();
+        
+        const itemIndex = cart.findIndex((cartItem) => cartItem.name === foodItem.name);
+
+        if (itemIndex === -1) {
+            setCart((prevCart) => [...prevCart, foodItem]);
+            localStorage.setItem("cart", JSON.stringify([...cart, foodItem]));
+        } else {
+            const updatedCart = cart.map((cartItem) => {
+                if (cartItem.name === foodItem.name) {
+                    return { ...cartItem, quantity: cartItem.quantity + foodItem.quantity };
+                } else {
+                    return cartItem;
+                }
+            });
+
+            setCart(updatedCart);
+            localStorage.setItem("cart", JSON.stringify(updatedCart));
+        }
+    };
 
     const location = useLocation();
     let foodId = parseInt(location.pathname.slice(-2))
@@ -34,8 +57,31 @@ export const Showcase = () => {
         {
             name : food[0].name,
             image : food[0].image,
+            price : food[0].price,
             quantity : quantity,
         }
+
+        const addedToCart = () => toast.success(`${food[0].name} added to cart`, {
+            duration  : 2000,
+            position : "top-center",
+
+            style: {
+                backgroundColor: "#ffffff",
+                color: "#01D28E",
+                fontFamily: "Poppins, sans-serif",
+                fontWeight: "regular",
+                fontSize: "1rem",
+                textAlign: "center",
+                width: "auto",
+                height: "auto",
+                borderRadius: "20px",
+                padding: "1rem",
+                boxShadow: "0px 10px 15px rgba(0, 0, 0, 0.4)",
+                marginTop: "4rem",
+            },
+
+            icon : "🍳"
+        });
 
 
     return (
@@ -208,7 +254,7 @@ export const Showcase = () => {
                                 justifyContent: 'center',
                                 alignItems: "center"
                             }}
-                            onClick={() => handleAddToCart(foodItem)}
+                            onClick={(e) => {handleAddToCart(e); addedToCart();}}
                         >
                             <Typography
                                 sx={{
@@ -223,6 +269,11 @@ export const Showcase = () => {
                                 Add to cart
                             </Typography>
                         </Button>
+                        <Toaster 
+                            containerStyle={{
+                                marginBottom : "3rem",
+                            }}
+                        />
                         <Button
                             sx={{
                                 backgroundColor: "#01D28E",
