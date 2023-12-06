@@ -1,0 +1,16 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "origin"]
+	url = https://github.com/rohitcodism/Restora.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+	gh-resolved = base
+[branch "main"]
+	remote = origin
+	merge = refs/heads/main
+[branch "search-box-added"]
+	github-pr-base-branch = "rohitcodism#Restora#main"
+	remote = origin
+	merge = refs/heads/search-box-added

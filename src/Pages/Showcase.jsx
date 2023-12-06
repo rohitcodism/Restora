@@ -55,13 +55,15 @@ export const Showcase = () => {
 
         const foodItem =
         {
+            id : food[0].id,
             name : food[0].name,
             image : food[0].image,
-            price : food[0].price,
+            price : food[0].price*quantity,
+            defaultPrice : food[0].price,
             quantity : quantity,
         }
 
-        const addedToCart = () => toast.success(`${food[0].name} added to cart`, {
+        const addedToCart = () => toast.success(`${foodItem.quantity} ${food[0].name} added to cart`, {
             duration  : 2000,
             position : "top-center",
 
@@ -200,7 +202,10 @@ export const Showcase = () => {
                                 options={Quantities}
                                 getOptionLabel={(option) => option.label}
 
-                                onChange={(e, value) => { setQuantity(parseInt(value.label)); console.log(value); }}
+                                onChange={(e, value) => {
+                                    setQuantity(parseInt(value.label));
+                                    foodItem.price = foodItem.defaultPrice*parseInt(value.label);
+                                }}
                                 renderInput={(params) => (<TextField {...params} placeholder="1" sx={{
                                     textAlign: "center", paddingTop: 0, display: "flex", justifyContent: "center", alignItems: "center", height: "40px", lineHeight: "40px", '& .MuiOutlinedInput-root .MuiInputBase-input': {
                                         paddingTop: 0, // Remove default top padding
